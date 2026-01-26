@@ -112,9 +112,9 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_TREECKO,
-    SPECIES_TORCHIC,
-    SPECIES_MUDKIP,
+    SPECIES_TURTWIG,
+    SPECIES_CHIMCHAR,
+    SPECIES_PIPLUP,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -288,7 +288,6 @@ static const struct CompressedSpriteSheet sSpriteSheet_PokeballSelect[] =
         .size = 0x0800,
         .tag = TAG_POKEBALL_SELECT
     },
-    {}
 };
 
 static const struct CompressedSpriteSheet sSpriteSheet_StarterCircle[] =
@@ -298,7 +297,6 @@ static const struct CompressedSpriteSheet sSpriteSheet_StarterCircle[] =
         .size = 0x0800,
         .tag = TAG_STARTER_CIRCLE
     },
-    {}
 };
 
 static const struct SpritePalette sSpritePalettes_StarterChoose[] =
@@ -311,7 +309,6 @@ static const struct SpritePalette sSpritePalettes_StarterChoose[] =
         .data = sStarterCircle_Pal,
         .tag = TAG_STARTER_CIRCLE
     },
-    {},
 };
 
 static const struct SpriteTemplate sSpriteTemplate_Hand =
