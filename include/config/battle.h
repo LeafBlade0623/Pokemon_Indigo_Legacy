@@ -162,7 +162,7 @@
 #define B_INTREPID_SWORD            GEN_LATEST // In Gen9+, Intrepid Sword raises Attack by one stage only once per Battle.
 #define B_DAUNTLESS_SHIELD          GEN_LATEST // In Gen9+, Dauntless Shield raises Defense by one stage only once per Battle.
 #define B_DISGUISE_HP_LOSS          GEN_LATEST // In Gen8+, when a Disguised Mimikyu's Disguise is busted, upon changing to its Busted Form it loses HP equal to 1/8 of its maximum HP.
-#define B_ABILITY_TRIGGER_CHANCE    GEN_LATEST // In Gen3, Shed Skin, Cute Charm, Flame Body, Static and Poison Point have a 1/3 chance to trigger. In Gen 4+ it's 30%.
+#define B_ABILITY_TRIGGER_CHANCE    GEN_4 // In Gen3, Shed Skin, Cute Charm, Flame Body, Static and Poison Point have a 1/3 chance to trigger. In Gen 4+ it's 30%.
                                                // In Gen3, Effect Spore has a 10% chance to sleep, poison or paralyze, with an equal chance.
                                                // In Gen4, it's 30%. In Gen5+ it has 11% to sleep, 9% chance to poison and 10% chance to paralyze.
 #define B_PICKUP_WILD               GEN_LATEST // In Gen9+, Pickup allows its user to pickup its own used item at the end of the turn in wild battles.
@@ -188,14 +188,14 @@
 #define B_TIMER_BALL_MODIFIER       GEN_LATEST // In Gen5+, Timer Ball's effectiveness increases by x0.3 per turn instead of x0.1
 #define B_DUSK_BALL_MODIFIER        GEN_LATEST // In Gen7+, Dusk Ball's catch multiplier is x3 instead of x3.5.
 #define B_QUICK_BALL_MODIFIER       GEN_LATEST // In Gen5+, Quick Ball's catch multiplier is x5 instead of x4.
-#define B_LURE_BALL_MODIFIER        GEN_LATEST // In Gen8+, Lure Ball's catch multiplier is x4. In Gen7, it's x5. In Gen6 and earlier, it's x3.
+#define B_LURE_BALL_MODIFIER        GEN_7 // In Gen8+, Lure Ball's catch multiplier is x4. In Gen7, it's x5. In Gen6 and earlier, it's x3.
 #define B_HEAVY_BALL_MODIFIER       GEN_LATEST // In Gen7+, Heavy Ball's ranges change. See Cmd_handleballthrow.
 #define B_DREAM_BALL_MODIFIER       GEN_LATEST // In Gen8+, Dream Ball's catch multiplier is x4 when the target is asleep or has the ability Comatose.
 #define B_SPORT_BALL_MODIFIER       GEN_LATEST // In Gen8+, Sport Ball's catch multiplier was reduced from x1.5 to x1.
 #define B_SAFARI_BALL_MODIFIER      GEN_LATEST // In Gen8+, Safari Ball's catch multiplier was reduced from x1.5 to x1.
 #define B_FRIEND_BALL_MODIFIER      GEN_LATEST // In Gen8+, Friend Ball's friendship boost was reduced from 200 to 150.
 #define B_SERENE_GRACE_BOOST        GEN_LATEST // In Gen5+, Serene Grace boosts the added flinch chance of King's Rock and Razor Fang.
-#define B_IRON_BALL                 GEN_LATEST // In Gen5+, Flying-type Pokemon holding Iron Ball take x1 damage from Ground-type moves regardless of their other types, except during Inverse Battles or if the Pokemon is grounded by any other effect.
+#define B_IRON_BALL                 GEN_4 // In Gen5+, Flying-type Pokemon holding Iron Ball take x1 damage from Ground-type moves regardless of their other types, except during Inverse Battles or if the Pokemon is grounded by any other effect.
 
 // Flag settings
 // To use the following features, change the 0 for a flag present in include/constants/flags.h, preferably an unused one.
@@ -216,8 +216,8 @@
 #define B_FLAG_AI_VS_AI_BATTLE      0     // If this flag is set, the player's mons will be controlled by the ai next battles.
 #define B_FLAG_DYNAMAX_BATTLE       0     // If this flag is set, the ability to Dynamax in battle is enabled for all trainers.
 #define B_FLAG_TERA_ORB_CHARGED     0     // If this flag is set, the Tera Orb is charged. It is automatically set upon healing and cleared upon Terastallizing once configured.
-#define B_FLAG_TERA_ORB_NO_COST     0     // If this flag is set, the Tera Orb does not use up its charge upon Terastallization. In S/V, this occurs after an event with Terapagos.
-#define B_FLAG_SLEEP_CLAUSE         0     // If this flag is set, sleep clause is enabled; if the player / AI has already put a Pokémon on the opponent's side to sleep and it is still sleeping, another one can't be put to sleep. AI requires AI_FLAG_CHECK_BAD_MOVE to understand.
+#define B_FLAG_TERA_ORB_NO_COST     1     // If this flag is set, the Tera Orb does not use up its charge upon Terastallization. In S/V, this occurs after an event with Terapagos.
+#define B_FLAG_SLEEP_CLAUSE         1     // If this flag is set, sleep clause is enabled; if the player / AI has already put a Pokémon on the opponent's side to sleep and it is still sleeping, another one can't be put to sleep. AI requires AI_FLAG_CHECK_BAD_MOVE to understand.
 #define B_FLAG_NO_WHITEOUT          0     // If this flag is set, the player can not white out against Trainers. Please note that the party is not healed automatically!
 
 // Var Settings
@@ -237,7 +237,7 @@
 #define NO_BAG_AGAINST_TRAINER   1
 #define NO_BAG_IN_BATTLE         2
 
-#define B_VAR_NO_BAG_USE         0     // If 1, the ability to use the bag in battle is disabled in trainer battles. If 2, it is also disabled in wild battles.
+#define B_VAR_NO_BAG_USE         1     // If 1, the ability to use the bag in battle is disabled in trainer battles. If 2, it is also disabled in wild battles.
 
 // Sky Battles
 #define B_FLAG_SKY_BATTLE                 0     // If this flag has a value, the player will be able to engage in scripted Sky Battles.
@@ -264,7 +264,7 @@
 #define B_OVERWORLD_FOG                 GEN_LATEST // In Gen8+, overworld Fog summons Misty Terrain in battle. In Gen4 only, overworld Fog summons the unique fog weather condition in battle.
 #define B_OVERWORLD_SNOW                GEN_LATEST // In Gen9+, overworld Snow will summon snow instead of hail in battle.
 #define B_SNOW_WARNING                  GEN_LATEST // In Gen9+, Snow Warning will summon snow instead of hail.
-#define B_PREFERRED_ICE_WEATHER         B_ICE_WEATHER_BOTH // Toggles Hail move effects to Snow and vice versa.
+#define B_PREFERRED_ICE_WEATHER         B_ICE_WEATHER_SNOW // Toggles Hail move effects to Snow and vice versa.
 
 // Terrain settings
 #define B_TERRAIN_BG_CHANGE         TRUE       // If set to TRUE, terrain moves permanently change the default battle background until the effect fades.
@@ -277,7 +277,7 @@
 #define B_NEW_TERRAIN_BACKGROUNDS   FALSE      // If set to TRUE, uses new terrain backgrounds for Electric, Misty, Grassy and Psychic Terrain.
 
 // Interface settings
-#define B_FAST_INTRO_PKMN_TEXT              TRUE  // If set to TRUE, battle intro texts print at the same time as animation of a Pokémon, as opposing to waiting for the animation to end.
+#define B_FAST_INTRO_PKMN_TEXT              FALSE  // If set to TRUE, battle intro texts print at the same time as animation of a Pokémon, as opposing to waiting for the animation to end.
 #define B_FAST_INTRO_NO_SLIDE               FALSE // If set to TRUE, the slide animation that happens at the beginning of the battle is skipped.
 #define B_FAST_HP_DRAIN                     TRUE  // If set to TRUE, HP bars will move faster.
 #define B_FAST_EXP_GROW                     TRUE  // If set to TRUE, EXP bars will move faster.
@@ -285,17 +285,17 @@
 #define B_SHOW_CATEGORY_ICON                TRUE  // If set to TRUE, it will show an icon in the summary and move relearner showing the move's category.
 #define B_HIDE_HEALTHBOX_IN_ANIMS           TRUE  // If set to TRUE, hides healthboxes during move animations.
 #define B_WAIT_TIME_MULTIPLIER              16    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
-#define B_QUICK_MOVE_CURSOR_TO_RUN          FALSE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
-#define B_RUN_TRAINER_BATTLE                TRUE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
+#define B_QUICK_MOVE_CURSOR_TO_RUN          TRUE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
+#define B_RUN_TRAINER_BATTLE                FALSE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
 #define B_MOVE_DESCRIPTION_BUTTON           L_BUTTON // If set to a button other than B_LAST_USED_BALL_BUTTON, pressing this button will open the move description menu
-#define B_SHOW_USELESS_Z_MOVE_INFO          FALSE // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
+#define B_SHOW_USELESS_Z_MOVE_INFO          TRUE // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
 #define B_ANIMATE_MON_AFTER_KO              TRUE // If set to TRUE, if a Pokémon on the opposite site faints, the non-fainted Pokemon will display a victory animation.
 #define B_ANIMATE_MON_AFTER_FAILED_POKEBALL TRUE  // If set to TRUE, if a Pokémon on the opposite side breaks out of a thrown Poké Ball, the wild Pokémon will display its animation.
-#define B_SHOW_DYNAMAX_MESSAGE              FALSE // If set to TRUE, an additional battle message is shown after completing Dynamaxing/Gigantamaxing.
+#define B_SHOW_DYNAMAX_MESSAGE              TRUE // If set to TRUE, an additional battle message is shown after completing Dynamaxing/Gigantamaxing.
 
 // Catching settings
 #define B_SEMI_INVULNERABLE_CATCH       GEN_LATEST // In Gen4+, you cannot throw a ball against a Pokemon that is in a semi-invulnerable state (dig/fly/etc)
-#define B_CATCHING_CHARM_BOOST          100        // % boost in Critical Capture odds if player has the Catching Charm.
+#define B_CATCHING_CHARM_BOOST          50        // % boost in Critical Capture odds if player has the Catching Charm.
 #define B_CRITICAL_CAPTURE              TRUE       // If set to TRUE, Critical Capture will be enabled.
 #define B_CRITICAL_CAPTURE_LOCAL_DEX    TRUE       // If set to FALSE, Critical Capture % is based off of the National Pokedex estimated by enabled generations.
 #define B_CRITICAL_CAPTURE_IF_OWNED     GEN_LATEST // In Gen9, a capture appear critical if the pokemon you are trying to catch already has a dex entry (has already been caught)
@@ -312,7 +312,7 @@
 #define B_MULTI_BATTLE_WHITEOUT         GEN_LATEST // In Gen4+, multi battles end when the Player and also their Partner don't have any more Pokémon to fight.
 #define B_EVOLUTION_AFTER_WHITEOUT      GEN_LATEST // In Gen6+, Pokemon that qualify for evolution after battle will evolve even if the player loses.
 #define B_WILD_NATURAL_ENEMIES          TRUE       // If set to TRUE, certain wild mon species will attack other species when partnered in double wild battles (eg. Zangoose vs Seviper)
-#define B_AFFECTION_MECHANICS           TRUE       // In Gen6+, there's a stat called affection that can trigger different effects in battle. From LGPE onwards, those effects use friendship instead.
+#define B_AFFECTION_MECHANICS           FALSE       // In Gen6+, there's a stat called affection that can trigger different effects in battle. From LGPE onwards, those effects use friendship instead.
 #define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // In Gen7+, trainers will use certain types of Poké Balls depending on their trainer class.
 #define B_TRAINER_MON_RANDOM_ABILITY    FALSE      // If this is set to TRUE a random legal ability will be generated for a trainer mon
 #define B_OBEDIENCE_MECHANICS           GEN_LATEST // In PLA+ (here Gen8+), obedience restrictions also apply to non-outsider Pokémon, albeit based on their level met rather than actual level
@@ -320,7 +320,7 @@
 #define B_TOXIC_REVERSAL                GEN_LATEST // In Gen5+, bad poison will change to regular poison at the end of battles.
 #define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // In Gen4+, trying to catch a Trainer's Pokémon does not consume the Poké Ball.
 #define B_SLEEP_CLAUSE                  FALSE      // Enables Sleep Clause all the time in every case, overriding B_FLAG_SLEEP_CLAUSE. Use that for modularity.
-#define B_PARTNER_MONS_MARKED_SEEN      FALSE      // If TRUE, if your double battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
+#define B_PARTNER_MONS_MARKED_SEEN      TRUE      // If TRUE, if your double battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
 
 #define NUM_BEEPS_GEN_LATEST            4                    // Loops 4 times
 #define NUM_BEEPS_GEN_3                 -1                   // Loops infinitely
@@ -354,7 +354,7 @@
 #define SHOW_TYPES_ALWAYS   1                    // Always show types in battle
 #define SHOW_TYPES_CAUGHT   2                    // Only show types if you've caught a species of the mon.
 #define SHOW_TYPES_SEEN     3                    // Only show types if you've seen a species of the mon.
-#define B_SHOW_TYPES        SHOW_TYPES_NEVER     // When to show type indicators next to Pokémon health bars in battle, while choosing a move after selecting a target Pokémon.
+#define B_SHOW_TYPES        SHOW_TYPES_SEEN     // When to show type indicators next to Pokémon health bars in battle, while choosing a move after selecting a target Pokémon.
 
 #define SHOW_EFFECTIVENESS_NEVER    0           // Never show effectiveness when selecting moves.
 #define SHOW_EFFECTIVENESS_ALWAYS   1           // Always show effectiveness when selecting moves.
@@ -373,7 +373,7 @@
 #define B_POOL_SETTING_FIXED_SEED           0x1D4127 // "Random" number, unless a mistake was made, it's へだら in Emerald charmap which should spell he-da-ra
 #define B_POOL_RULE_SPECIES_CLAUSE          FALSE    // Only pick a single pokemon of a unique NatDex number
 #define B_POOL_RULE_EXCLUDE_FORMS           FALSE    // Exclude different forms from the Species Clause
-#define B_POOL_RULE_ITEM_CLAUSE             FALSE    // Only allow each item to be picked once
+#define B_POOL_RULE_ITEM_CLAUSE             TRUE    // Only allow each item to be picked once
 #define B_POOL_RULES_USE_ITEM_EXCLUSIONS    FALSE    // Exclude items listed in poolItemClauseExclusions
 #define B_POOL_RULE_MEGA_STONE_CLAUSE       FALSE    // Pick only 1 mon with mega stone
 #define B_POOL_RULE_Z_CRYSTAL_CLAUSE        FALSE    // Pick only 1 mon with Z-crystal
