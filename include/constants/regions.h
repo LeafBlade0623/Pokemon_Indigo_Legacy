@@ -16,6 +16,7 @@ enum Region
     REGION_HISUI,
     REGION_PALDEA,
     REGIONS_COUNT,
+    REGION_SEVII,
 };
 
 #endif  // GUARD_CONSTANTS_REGIONS_H
