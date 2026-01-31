@@ -280,7 +280,7 @@ LittlerootTown_EventScript_BrendansHouseSign::
 	end
 
 LittlerootTown_EventScript_PlayersHouseSignMale::
-	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_DEFAULT
+	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_SIGN
 	return
 
 LittlerootTown_EventScript_BirchsHouseSignFemale::
@@ -297,7 +297,27 @@ LittlerootTown_EventScript_BirchsHouseSignMale::
 	return
 
 LittlerootTown_EventScript_PlayersHouseSignFemale::
-	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_DEFAULT
+	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_SIGN
+	return
+
+LittlerootTown_EventScript_BluesHouseSign::
+	msgbox LittlerootTown_Text_BluesHouse, MSGBOX_SIGN
+	return
+
+LittlerootTown_EventScript_TracesHouseSign::
+	msgbox LittlerootTown_Text_TracesHouse, MSGBOX_SIGN
+	return
+
+LittlerootTown_EventScript_RedsHouseSign::
+	msgbox LittlerootTown_Text_RedsHouse, MSGBOX_SIGN
+	return
+
+LittlerootTown_EventScript_JoelsHouseSign::
+	msgbox LittlerootTown_Text_JoelsHouse, MSGBOX_SIGN
+	return
+
+LittlerootTown_EventScript_BrookesHouseSign::
+	msgbox LittlerootTown_Text_BrookesHouse, MSGBOX_SIGN
 	return
 
 LittlerootTown_EventScript_GiveRunningShoesTrigger0::
@@ -705,14 +725,29 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
 	.string "Good luck!$"
 
 LittlerootTown_Text_TownSign:
-	.string "LITTLEROOT TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+	.string "Pallet Town\n"
+	.string "“AThe home of champions.”$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "PROF. BIRCH'S POKéMON LAB$"
+	.string "Oak Pokémon Research Lab$"
 
 LittlerootTown_Text_PlayersHouse:
 	.string "{PLAYER}'s HOUSE$"
+
+LittlerootTown_Text_BluesHouse:
+	.string "Blue's House$"
+
+LittlerootTown_Text_JoelsHouse:
+	.string "Joel's House$"
+
+LittlerootTown_Text_RedsHouse:
+	.string "Red's House$"
+
+LittlerootTown_Text_BrookesHouse:
+	.string "Brooke's House$"
+
+LittlerootTown_Text_TracesHouse:
+	.string "Trace's House$"
 
 LittlerootTown_Text_ProfBirchsHouse:
 	.string "PROF. BIRCH'S HOUSE$"
