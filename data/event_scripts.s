@@ -1155,3 +1155,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
+
+	.include "data/maps/LittlerootTown_RedsHouse_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_RedsHouse_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_JoelsHouse_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_JoelsHouse_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_TracesHouse_2/scripts.inc"
+
+	.include "data/maps/LittlerootTown_TracesHouse_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_BrookesHouse_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_BrookesHouse_1F/scripts.inc"

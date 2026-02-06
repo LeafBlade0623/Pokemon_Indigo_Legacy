@@ -99,7 +99,15 @@
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LittlerootTown_ProfessorBirchsLab",
+    "LittlerootTown_RedsHouse_1F",
+    "LittlerootTown_RedsHouse_2F",
+    "LittlerootTown_JoelsHouse_1F",
+    "LittlerootTown_JoelsHouse_2F",
+    "LittlerootTown_TracesHouse_1F",
+    "LittlerootTown_TracesHouse_2",
+    "LittlerootTown_BrookesHouse_1F",
+    "LittlerootTown_BrookesHouse_2F"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

@@ -68,6 +68,34 @@
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_REDS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_JOELS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 16,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_TRACES_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_BROOKES_HOUSE_1F",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

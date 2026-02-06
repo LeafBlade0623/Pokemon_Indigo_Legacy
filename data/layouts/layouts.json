@@ -4410,6 +4410,86 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_REDS_HOUSE_2F",
+      "name": "LittlerootTown_RedsHouse_2F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_RedsHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_RedsHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_REDS_HOUSE_1F",
+      "name": "LittlerootTown_RedsHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_RedsHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_RedsHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_JOELS_HOUSE_1F",
+      "name": "LittlerootTown_JoelsHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_JoelsHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_JoelsHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_JOELS_HOUSE_2F",
+      "name": "LittlerootTown_JoelsHouse_2F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_JoelsHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_JoelsHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_TRACES_HOUSE_2",
+      "name": "LittlerootTown_TracesHouse_2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_TracesHouse_2/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_TracesHouse_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_TRACES_HOUSE_1F",
+      "name": "LittlerootTown_TracesHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_TracesHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_TracesHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_BROOKES_HOUSE_1F",
+      "name": "LittlerootTown_BrookesHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_BrookesHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_BrookesHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_BROOKES_HOUSE_2F",
+      "name": "LittlerootTown_BrookesHouse_2F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_BrookesHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_BrookesHouse_2F/map.bin"
     }
   ]
 }
