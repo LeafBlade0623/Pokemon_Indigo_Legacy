@@ -63,6 +63,13 @@ LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport::
 LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 	end
 
+PalletTown_MaysHouse_1F_TestScript::
+    lock
+    msgbox RivalsHouse_1F_Text_LikeChildLikeFather, MSGBOX_DEFAULT
+    release
+	setvar VAR_PALLET_TOWN_STATE, 1
+    return
+
 LittlerootTown_MaysHouse_1F_Movement_RivalMomApproach:
 	walk_down
 	walk_left

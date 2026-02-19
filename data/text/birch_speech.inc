@@ -1,9 +1,9 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Hello there!\p"
+	.string "Thank you for taking the time to\n"
+	.string "view this introductory video!\p"
+	.string "My name is Oak, Kanto's resident\n"
+	.string "Pokémon Professor.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
@@ -12,28 +12,32 @@ gText_Birch_Pokemon::
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "As you know, this world is filled\n" 
+	.string "with Pokémon, amazing creatures\l"
+	.string "we have the honor of calling our\l"
+	.string "friends, pets, helpers, battling\l"
+	.string "partners, and most of all, friends.\p"
+	.string "As of today, you are officially\n"
+	.string "a Pokémon Trainer.\p"
+	.string "I'm sure you've waited a long time\n"
+	.string "for this day!\p"
+	.string "At my lab in Pallet Town, you will\n"
+	.string "recieve a Pokémon of your choosing,\l"
+	.string "as well as access to the Trainer's\l"
+	.string "Edition of the PokéDex app on your\l"
+	.string "RotoGear.\p"
+	.string "The world will be your oyster once\n"
+	.string "you recieve your Pokémon.\p"
+	.string "You'll catch Pokémon, take on the\n"
+	.string "Gym Challenge, and travel the entire\l"
+	.string "Indigo Region!\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
 	.string "And you are?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Please select a character.$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"
@@ -50,12 +54,7 @@ gText_Birch_YourePlayer::
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "Your very own Pokémon journey\n"
+	.string "awaits.\p"
+	.string "Welcome to the world of Pokémon!\p"
 	.string "$"

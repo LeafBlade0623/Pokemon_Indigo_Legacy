@@ -70,11 +70,65 @@
     {
       "type": "trigger",
       "x": 2,
-      "y": 2,
+      "y": 3,
       "elevation": 0,
       "var": "VAR_PALLET_TOWN_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PalletTown_MaysHouse_1F_TestScript"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_PALLET_TOWN_STATE",
+      "var_value": "0",
+      "script": "PalletTown_MaysHouse_1F_TestScript"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_PALLET_TOWN_STATE",
+      "var_value": "0",
+      "script": "PalletTown_MaysHouse_1F_TestScript"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_PALLET_TOWN_STATE",
+      "var_value": "0",
+      "script": "PalletTown_MaysHouse_1F_TestScript"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_PALLET_TOWN_STATE",
+      "var_value": "0",
+      "script": "PalletTown_MaysHouse_1F_TestScript"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_PALLET_TOWN_STATE",
+      "var_value": "0",
+      "script": "PalletTown_MaysHouse_1F_TestScript"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_PALLET_TOWN_STATE",
+      "var_value": "0",
+      "script": "PalletTown_MaysHouse_1F_TestScript"
     }
   ],
   "bg_events": []
