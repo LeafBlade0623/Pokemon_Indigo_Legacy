@@ -177,6 +177,7 @@ static u8 sBirchSpeechMainTaskId;
 // Static ROM declarations
 
 static u32 InitMainMenu(bool8);
+static u32 InitNewGamePlease(bool8);
 static void Task_MainMenuCheckSaveFile(u8);
 static void Task_MainMenuCheckBattery(u8);
 static void Task_WaitForSaveFileErrorWindow(u8);
@@ -406,7 +407,7 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .bg = 0,
         .tilemapLeft = 3,
         .tilemapTop = 5,
-        .width = 6,
+        .width = 8,
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x6D
@@ -473,8 +474,8 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 };
 
 static const struct MenuAction sMenuActions_Gender[] = {
-    {COMPOUND_STRING("BOY"), {NULL}},
-    {COMPOUND_STRING("GIRL"), {NULL}}
+    {COMPOUND_STRING("OPTION 1"), {NULL}},
+    {COMPOUND_STRING("OPTION 2"), {NULL}}
 };
 
 static const u8 *const sMalePresetNames[] = {
@@ -536,11 +537,24 @@ void CB2_ReinitMainMenu(void)
     InitMainMenu(TRUE);
 }
 
+void Start_BirchCutsceneFromOptions(void)
+{
+    InitNewGamePlease(TRUE);
+}
+
+static u32 InitNewGamePlease(bool8 returningFromOptionsMenu)
+{
+    gPlttBufferUnfaded[0] = RGB_BLACK;
+    gPlttBufferFaded[0] = RGB_BLACK;
+    CreateTask(Task_NewGameBirchSpeech_Init, 0);
+    return 0;
+}
+
 static u32 InitMainMenu(bool8 returningFromOptionsMenu)
 {
     SetVBlankCallback(NULL);
 
-    SetGpuReg(REG_OFFSET_DISPCNT, 0);
+    SetGpuReg(REG_OFFSET_DISPCNT, 0); 
     SetGpuReg(REG_OFFSET_BG2CNT, 0);
     SetGpuReg(REG_OFFSET_BG1CNT, 0);
     SetGpuReg(REG_OFFSET_BG0CNT, 0);

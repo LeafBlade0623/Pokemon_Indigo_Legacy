@@ -26,7 +26,7 @@ gText_Birch_MainSpeech::
 	.string "as well as access to the Trainer's\l"
 	.string "Edition of the PokéDex app on your\l"
 	.string "RotoGear.\p"
-	.string "The world will be your oyster once\n"
+	.string "The world will be your Cloyster once\n"
 	.string "you recieve your Pokémon.\p"
 	.string "You'll catch Pokémon, take on the\n"
 	.string "Gym Challenge, and travel the entire\l"
