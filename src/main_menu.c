@@ -616,6 +616,7 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
     }
     else
     {
+        sBaseOptionsMenuSelected = 0;
         CreateTask(Task_MainMenuCheckSaveFile, 0);
     }
 
@@ -1078,7 +1079,7 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
                 break;
             case ACTION_OPTION:
                 sBaseOptionsMenuSelected = 1;
-                gMain.savedCallback = CB2_ReinitMainMenu;
+                gMain.savedCallback = CB2_InitMainMenu;
                 SetMainCallback2(CB2_InitOptionMenu);
                 DestroyTask(taskId);
                 break;
