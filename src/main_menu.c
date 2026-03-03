@@ -171,6 +171,7 @@
 
 static EWRAM_DATA bool8 sStartedPokeBallTask = 0;
 static EWRAM_DATA u16 sCurrItemAndOptionMenuCheck = 0;
+static EWRAM_DATA bool8 sBaseOptionsMenuSelected = 0;
 
 static u8 sBirchSpeechMainTaskId;
 
@@ -604,7 +605,19 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_WIN0_ON | DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     ShowBg(0);
     HideBg(1);
-    CreateTask(Task_MainMenuCheckSaveFile, 0);
+    if (returningFromOptionsMenu)
+    {
+        if (sBaseOptionsMenuSelected == 0)
+        {
+            gPlttBufferUnfaded[0] = RGB_BLACK;
+            gPlttBufferFaded[0] = RGB_BLACK;
+            CreateTask(Task_NewGameBirchSpeech_Init, 0);
+        }
+    }
+    else
+    {
+        CreateTask(Task_MainMenuCheckSaveFile, 0);
+    }
 
     return 0;
 }
@@ -1053,9 +1066,9 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
         {
             case ACTION_NEW_GAME:
             default:
-                gPlttBufferUnfaded[0] = RGB_BLACK;
-                gPlttBufferFaded[0] = RGB_BLACK;
-                gTasks[taskId].func = Task_NewGameBirchSpeech_Init;
+                gMain.savedCallback = CB2_ReinitMainMenu;
+                SetMainCallback2(CB2_InitOptionMenu);
+                DestroyTask(taskId);
                 break;
             case ACTION_CONTINUE:
                 gPlttBufferUnfaded[0] = RGB_BLACK;
@@ -1064,6 +1077,7 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
                 DestroyTask(taskId);
                 break;
             case ACTION_OPTION:
+                sBaseOptionsMenuSelected = 1;
                 gMain.savedCallback = CB2_ReinitMainMenu;
                 SetMainCallback2(CB2_InitOptionMenu);
                 DestroyTask(taskId);
@@ -1260,6 +1274,8 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
+    if (gPaletteFade.active)
+        return;
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     InitBgFromTemplate(&sBirchBgTemplate);
