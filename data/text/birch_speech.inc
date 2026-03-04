@@ -40,8 +40,11 @@ gText_Birch_BoyOrGirl::
 	.string "Please select a character.$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+	.string "In future versions of this hack,\n"
+	.string "you will also be able to seperately\l"
+	.string "pick your pronouns,as well as\l"
+	.string "customize some aspects of your character.\p"
+	.string "In the mean time, what is your name?$"
 
 gText_Birch_SoItsPlayer::
 	.string "So it's {PLAYER}{KUN}?$"
